@@ -2,6 +2,7 @@ $(document).ready(function(){
   $("#second-step").hide();
   $("#third-step").hide();
   $("#fourth-step").hide();
+  $("#fifth-step").hide();
   $("#white-shoe").hide();
   $("#blue-shoe").hide();
   $("#black-shoe").hide();
@@ -26,16 +27,16 @@ $(document).ready(function(){
     globalShoeColor = colorchoice
     $("#second-step").hide();
 
-    if (colorchoice == "white") {
+    if (globalShoeColor == "white") {
       shoePersonality = "gentle";
       $("#white-shoe").show();
-    } else if (colorchoice == "blue") {
+    } else if (globalShoeColor == "blue") {
       shoePersonality = "conventional";
       $("#blue-shoe").show();
-    } else if (colorchoice == "black") {
+    } else if (globalShoeColor == "black") {
       shoePersonality = "stealth";
       $("#black-shoe").show();
-    } else if (colorchoice == "red"){
+    } else if (globalShoeColor == "red"){
       shoePersonality = "passionate";
       $("#red-shoe").show();
     } else {
@@ -72,7 +73,39 @@ $(document).ready(function(){
     var location = $("#location").val();
     var friends = $("#friends").val();
     var deepdown = $("#deepdown").val();
+    $("#fourth-step").hide();
+    $("#final-featured-shoe").append("<img class='card-img-top resize-shoe' src='img/shoes/" + globalShoeColor + ".png' alt='Card image cap'>")
+    $("#final-user-name").append(globalUserName);
+    $("#final-user-name-h4").append(globalUserName)
+    $("#final-color").append(globalShoeColor)
+    // Logic for color attribution
+    $("#final-webbings").append(fruit);
+    $("#final-shoelaces").append(friends);
+    $("#final-midsole").append(location);
+    $("#final-outsole").append(deepdown);
+    $("#fifth-step").show();
+  });
 
-    console.log("fruit: ", fruit, " location: ", location, " friends: ", friends, " deep down: ", deepdown);
+  $("#startover").click(function(event){
+    event.preventDefault();
+    $("#final-featured-shoe").empty();
+    $("#third-step").hide();
+    $("#white-shoe").hide();
+    $("#blue-shoe").hide();
+    $("#black-shoe").hide();
+    $("#red-shoe").hide();
+    $("#insertname").empty();
+    $("#final-user-name").empty();
+    $("#final-user-name-h4").empty();
+    $("#final-color").empty();
+    // Logic for color attribution
+    $("#final-webbings").empty();
+    $("#final-shoelaces").empty();
+    $("#final-midsole").empty();
+    $("#final-outsole").empty();
+    $("#fifth-step").hide();
+    $("#insertname").append("<h1>Alright " + globalUserName + ", let's try again.</h1>");
+    $("#fourth-step-h1").empty();
+    $("#second-step").show();
   });
 });
