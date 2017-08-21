@@ -1,5 +1,10 @@
 $(document).ready(function(){
   $("#second-step").hide();
+  $("#third-step").hide();
+  $("#white-shoe").hide();
+  $("#blue-shoe").hide();
+  $("#black-shoe").hide();
+  $("#red-shoe").hide();
 
   $("form#nameForm").submit(function(event){
     event.preventDefault()
