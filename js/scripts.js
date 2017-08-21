@@ -66,4 +66,13 @@ $(document).ready(function(){
     $("#second-step").show();
   });
 
+  $("form#final-customization").submit(function(event){
+    event.preventDefault();
+    var fruit = $("#fruit").val();
+    var location = $("#location").val();
+    var friends = $("#friends").val();
+    var deepdown = $("#deepdown").val();
+
+    console.log("fruit: ", fruit, " location: ", location, " friends: ", friends, " deep down: ", deepdown);
+  });
 });
