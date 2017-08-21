@@ -1,12 +1,14 @@
 $(document).ready(function(){
   $("#second-step").hide();
   $("#third-step").hide();
+  $("#fourth-step").hide();
   $("#white-shoe").hide();
   $("#blue-shoe").hide();
   $("#black-shoe").hide();
   $("#red-shoe").hide();
 
   var globalUserName;
+  var globalShoeColor;
 
   $("form#nameForm").submit(function(event){
     event.preventDefault()
@@ -45,9 +47,13 @@ $(document).ready(function(){
     $("#shoe-color-word").append(colorchoice)
     $("#third-step").show();
   })
+
   $("#like-it").click(function(){
-    alert("yes!")
+    $("#third-step").hide();
+    $("#fourth-step-h1").append("<h1>Okay " + globalUserName + ", " + globalShoeColor + " will be your base.</h1>")
+    $("#fourth-step").show();
   });
+
   $("#try-again").click(function(){
     $("#third-step").hide();
     $("#white-shoe").hide();
@@ -56,6 +62,7 @@ $(document).ready(function(){
     $("#red-shoe").hide();
     $("#insertname").empty();
     $("#insertname").append("<h1>Alright " + globalUserName + ", let's try again.</h1>");
+    $("#fourth-step-h1").empty();
     $("#second-step").show();
   });
 

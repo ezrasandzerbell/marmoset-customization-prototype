@@ -13,3 +13,7 @@
 .resize-shoe {
   width: 250px;
 }
+
+.btn {
+  cursor: pointer;
+}
