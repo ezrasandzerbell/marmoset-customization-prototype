@@ -48,7 +48,7 @@
 <!-- Second Step (Choose Color of Shoe Base) -->
 
     <div class="text-center" id="second-step">
-      <h1>Hey <span id="insertname"></span>! Let's get started.</h1>
+      <span id="insertname"></span>
       <br>
       <p class="lead">The colors we choose tell people a lot about who we are. <br> How would you describe yourself?</p>
       <form class="" action="index.html" method="post" id="base-color-form">
@@ -63,19 +63,19 @@
             </div>
             <div class="col-md-2 radio">
               <label>
-                <input type="radio" name="base-color" value="blue" checked>
+                <input type="radio" name="base-color" value="blue" >
                 <br>Conventional
               </label>
             </div>
             <div class="col-md-2 radio">
               <label>
-                <input type="radio" name="base-color" value="black" checked>
+                <input type="radio" name="base-color" value="black" >
                 <br>Stealth
               </label>
             </div>
             <div class="col-md-2 radio">
               <label>
-                <input type="radio" name="base-color" value="red" checked>
+                <input type="radio" name="base-color" value="red" >
                 <br>Passionate
               </label>
             </div>
@@ -87,19 +87,37 @@
 
 <!-- Third Step (Show Shoe Selection) -->
 <div class="text-center" id="third-step">
-  <div class="" id="white-shoe">
-    
-    You chose a white shoe
+  <h1>You selected <span id="shoe-personality"></span>.</h1>
+  <br>
+  <p class="lead">Let's start with the base. How do you feel about a <span id="shoe-color-word"></span> shoe?</p>
+  <br><br>
+
+<!-- Four Shoe Color Options -->
+
+    <div id="white-shoe">
+      <img src="img/shoes/white-shoe.png" alt="white-shoe" class="resize-shoe" >
+    </div>
+    <div id="blue-shoe">
+      <img src="img/shoes/blue-shoe.png" alt="blue-shoe" class="resize-shoe" >
+    </div>
+    <div id="black-shoe">
+      <img src="img/shoes/black-shoe.png" alt="black-shoe" class="resize-shoe" >
+    </div>
+    <div id="red-shoe">
+      <img src="img/shoes/red-shoe.png" alt="red-shoe" class="resize-shoe" >
+    </div>
+  <br>
+
+<!-- Yes / No buttons -->
+
+<div class="row justify-content-center">
+  <div class="col-md-3">
+    <input class="btn btn-info btn-large" value="I Like It!" id="like-it"/>
   </div>
-  <div class="" id="blue-shoe">
-    You chose a blue shoe
+  <div class="col-md-3">
+    <input class="btn btn-danger btn-large" value="Try again" id="try-again"/>
   </div>
-  <div class="" id="black-shoe">
-    You chose a black shoe
-  </div>
-  <div class="" id="red-shoe">
-    You chose a red shoe
-  </div>
+</div>
 
 </div>
 
