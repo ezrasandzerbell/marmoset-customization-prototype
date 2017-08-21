@@ -131,36 +131,46 @@
       <p class="lead">I have just a few more questions for you.</p>
       <form action="submit" method="post" id="final-customization">
         <div class="row">
-          <div class="col-md-3 selectWrapper">
-            <select title="Favorite Fruit" id="fruit">
+          <div class="col-md-3">
+            <label for="location">My favorite fruit is:</label>
+            <div class="selectWrapper">
+              <select id="fruit">
+                  <option value="red">Strawberry</option>
+                  <option value="orange">Oranges</option>
+                  <option value="yellow">Bananas</option>
+              </select>
+            </div>
 
-                <option value="red">Strawberry</option>
-                <option value="orange">Oranges</option>
-                <option value="yellow">Bananas</option>
-
+          </div>
+          <div class="col-md-3">
+            <label for="location">Come find me:</label>
+            <div class="selectWrapper">
+              <select id="location">
+                  <option value="black">Outdoors</option>
+                  <option value="white">Indoors</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="location">My friends are:</label>
+            <div class="selectWrapper">
+              <select id="friends">
+                  <option value="white">Straightforward</option>
+                  <option value="pink">Fun and Bubbly</option>
+                  <option value="black and white">Exclusive</option>
+              </select>
+            </div>
+          </div>
+        <div class="col-md-3">
+          <label for="location">Deep down I am:</label>
+          <div class="selectWrapper">
+            <select id="deepdown">
+                <option value="white">Lighthearted</option>
+                <option value="black and white">Adaptable</option>
+                <option value="lime green">Unique</option>
+                <option value="red">Aggressive</option>
             </select>
           </div>
-          <div class="col-md-3 selectWrapper">
-            <select id="location" title="Come find me...">
-                <option value="black">Outdoors</option>
-                <option value="white">Indoors</option>
-            </select>
-          </div>
-          <div class="col-md-3 selectWrapper">
-            <select id="friends" title="My friends are">
-                <option value="white">Straightforward</option>
-                <option value="pink">Fun and Bubbly</option>
-                <option value="black and white">Exclusive</option>
-            </select>
-          </div>
-        <div class="col-md-3 selectWrapper">
-          <select id="deepdown" title="Deep down I am">
-              <option value="white">Lighthearted</option>
-              <option value="black and white">Adaptable</option>
-              <option value="lime green">Unique</option>
-              <option value="red">Aggressive</option>
-
-          </select>
         </div>
         </div>
         <br>
