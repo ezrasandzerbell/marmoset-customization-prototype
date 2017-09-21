@@ -7,9 +7,25 @@ $(document).ready(function(){
   $("#blue-shoe").hide();
   $("#black-shoe").hide();
   $("#red-shoe").hide();
-
+  $('#mobile-sfx').hide();
   var globalUserName;
   var globalShoeColor;
+
+  $("li.unclickable").click(function(){
+    alert("Not available in Demo Mode");
+  });
+
+  $("li.mobile-music").click(function(){
+    $('#mobile-sfx').hide();
+    $('#mobile-music').show();
+  });
+
+  $("li.mobile-sfx").click(function(){
+    $('#mobile-sfx').show();
+    $('#mobile-music').hide();
+  });
+
+
 
   $("form#nameForm").submit(function(event){
     event.preventDefault()
