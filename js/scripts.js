@@ -1,13 +1,4 @@
 $(document).ready(function(){
-  $("#second-step").hide();
-  $("#third-step").hide();
-  $("#fourth-step").hide();
-  $("#fifth-step").hide();
-  $("#white-shoe").hide();
-  $("#blue-shoe").hide();
-  $("#black-shoe").hide();
-  $("#red-shoe").hide();
-  $('#mobile-sfx').hide();
   var globalUserName;
   var globalShoeColor;
 
