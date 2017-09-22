@@ -15,12 +15,14 @@ $(document).ready(function(){
     alert("Not available in Demo Mode");
   });
 
-  $("li.mobile-music").click(function(){
+  $("li.mobile-music").click(function(event){
+    event.preventDefault();
     $('#mobile-sfx').hide();
     $('#mobile-music').show();
   });
 
-  $("li.mobile-sfx").click(function(){
+  $("li.mobile-sfx").click(function(event){
+    event.preventDefault();
     $('#mobile-sfx').show();
     $('#mobile-music').hide();
   });

@@ -44,6 +44,11 @@ body {
   text-align: center;
   cursor: pointer;
   font-family: sans-serif;
+  color: white;
+  
+  padding-right: -10%;
+  font-size: 75%;
+  letter-spacing: 0.128em;
 }
 
 .top-button-right {
@@ -56,6 +61,9 @@ body {
   text-align: center;
   cursor: pointer;
   font-family: sans-serif;
+  font-size: 75%;
+  padding-left: -10%;
+  letter-spacing: 0.128em;
 }
 
 section {
@@ -124,8 +132,9 @@ nav.filter {
   text-align: center;
   text-decoration: none;
   width: 30vw;
-
   line-height: 150px;
+
+  transition: background 100ms linear,color 100ms linear,border 100ms linear;
 }
 
 .mobile-options:hover {
